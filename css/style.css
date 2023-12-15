@@ -1,0 +1,65 @@
+:root {
+    --navbar-height: 25px;
+    --transition-speed: 0.4s;
+}
+
+body {
+    margin: 0;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a:not(:first-child) { /*first-child being the main logo*/
+    color: aliceblue;   
+    text-decoration: none;
+    padding: var(--navbar-height);
+    -o-transition: color var(--transition-speed) linear;
+    -o-transition: background-color var(--transition-speed) linear;
+    -ms-transition: color var(--transition-speed) linear;
+    -ms-transition: background-color var(--transition-speed) linear;
+    -moz-transition: color var(--transition-speed) linear;
+    -moz-transition: background-color var(--transition-speed) linear;
+    -webkit-transition: color var(--transition-speed) linear;
+    -webkit-transition: background-color var(--transition-speed) linear;
+}
+
+nav a:hover:not(:first-child) {
+    background-color: #c8ad7f;
+    color: black;
+    transition: 0.4s;
+}
+
+nav img { /*main logo*/
+    max-height: 75px;
+    padding: 10px;
+    vertical-align: baseline;
+}
+
+nav img:hover {
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+}
+
+#instagram_logo {
+    max-height: var(--navbar-height);
+}
+
+#main {
+    margin: auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+#main > li:first-child {
+    margin-top: calc(var(--navbar-height) * 5);
+}
