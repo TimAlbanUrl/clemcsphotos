@@ -7,6 +7,8 @@ body {
     margin: 0;
     top: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: aliceblue;
 }
 
 nav {
@@ -62,4 +64,22 @@ nav img:hover {
 
 #main > li:first-child {
     margin-top: calc(var(--navbar-height) * 5);
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;   
+    min-height: calc(var(--navbar-height) * 4);
+    padding: var(--navbar-height);
+}
+
+footer img {
+    max-width: calc(var(--navbar-height) * 2);
+    height: auto;
+    padding: 10px;
+}
+
+.row {
+    justify-content: center;
 }
