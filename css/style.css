@@ -63,7 +63,7 @@ nav img:hover {
 }
 
 #main > li:first-child {
-    margin-top: calc(var(--navbar-height) * 5);
+    margin-top: calc(var(--navbar-height) * 6);
 }
 
 footer {
